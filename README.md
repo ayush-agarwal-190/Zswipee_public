@@ -4,7 +4,7 @@ Welcome to the **AI Interview App** 🚀
 This application helps users **practice interviews with AI-generated questions and answers**, while providing seamless authentication and resume storage.  
 
 🔗 **Live Demo**: [AI Interview App](https://zwipee-public-version-hrc9.vercel.app/signin)  
-📺 **Assignment Video (Unlisted)**: [Watch on YouTube](https://youtu.be/)  
+📺 **Assignment Video (Unlisted)**: [Watch on YouTube]([https://youtu.be/](https://youtu.be/hKyEc1lbHvE))  
 
 ---
 
@@ -26,7 +26,7 @@ This application helps users **practice interviews with AI-generated questions a
 ### 1️⃣ Clone the Repository  
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/ayush-agarwal-190/Zswipee_public.git
 cd ai-interview-app
 ```
 
