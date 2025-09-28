@@ -4,7 +4,7 @@ Welcome to the **AI Interview App** 🚀
 This application helps users **practice interviews with AI-generated questions and answers**, while providing seamless authentication and resume storage.  
 
 🔗 **Live Demo**: [AI Interview App](https://zwipee-public-version-hrc9.vercel.app/signin)  
-📺 **Assignment Video (Unlisted)**: [Watch on YouTube]([https://youtu.be/](https://youtu.be/hKyEc1lbHvE))  
+📺 **Assignment Video (Unlisted)**: [Watch on YouTube](https://youtu.be/hKyEc1lbHvE)
 
 ---
 
