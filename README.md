@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# 📘 AI Interview App – Documentation  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **AI Interview App** 🚀  
+This application helps users **practice interviews with AI-generated questions and answers**, while providing seamless authentication and resume storage.  
 
-## Available Scripts
+🔗 **Live Demo**: [AI Interview App](https://zwipee-public-version-hrc9.vercel.app/signin)  
+📺 **Assignment Video (Unlisted)**: [Watch on YouTube](https://youtu.be/)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠️ Tech Stack Used  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js** → Frontend framework  
+- **Firebase** → Authentication & User Management  
+- **Cloudinary** → Resume (PDF) storage  
+- **Groq API** → AI-based question generation & answer validation  
+- **Gemini API (Google Generative AI)** → Enhancing AI-powered responses  
+- **Redux Toolkit** → State management  
+- **Framer Motion** → Smooth UI animations  
+- **MUI (Material UI)** → UI components  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Project Setup  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1️⃣ Clone the Repository  
 
-### `npm run build`
+```bash
+git clone <your-repo-link>
+cd ai-interview-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2️⃣ Install Dependencies  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have **Node.js** installed. Then run:  
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This will install all the dependencies from `package.json`, including:  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `firebase`
+- `@mui/material`
+- `@reduxjs/toolkit`
+- `framer-motion`
+- `groq-sdk`
+- `@google/generative-ai`
+- `react-pdf`
+- `mammoth`
+- and more (see full list in `package.json`)  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3️⃣ Environment Variables Setup  
 
-## Learn More
+The app requires several **API keys** to function properly.  
+You must create **two `.env` files**:  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ `.env` → Inside the **main project root**  
+✅ `.env` → Inside the **src/ folder**  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⚠️ **Important:** Both files must have the same keys.  
 
-### Code Splitting
+#### Example `.env` file content:  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```env
+# Firebase Config
+REACT_APP_FIREBASE_API_KEY=""
+REACT_APP_FIREBASE_AUTH_DOMAIN=""
+REACT_APP_FIREBASE_PROJECT_ID=""
+REACT_APP_FIREBASE_STORAGE_BUCKET=""
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=""
+REACT_APP_FIREBASE_APP_ID=""
+REACT_APP_FIREBASE_MEASUREMENT_ID=""
 
-### Analyzing the Bundle Size
+# Gemini API (Google Generative AI)
+REACT_APP_GEMINI_API_KEY=""
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Cloudinary (Resume Storage)
+REACT_APP_CLOUDINARY_CLOUD_NAME=""
 
-### Making a Progressive Web App
+# Groq API (AI Interview Q&A)
+REACT_APP_GROQ_API_KEY=""
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👉 Replace the empty strings `""` with your **actual API keys**.  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 4️⃣ Start the Development Server  
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This will start your app at:  
+👉 [http://localhost:3000](http://localhost:3000)  
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📂 Features  
+
+- 🔐 **Secure Login/Signup** → Using Firebase Authentication  
+- 📄 **Upload Resume** → Store resumes as PDF files on Cloudinary  
+- 🤖 **AI-Powered Interviews** → Groq API generates questions & validates answers  
+- 🧠 **Gemini API** → Provides smart AI responses for better user experience  
+- 🎨 **Modern UI** → Built with Material UI & Framer Motion animations  
+
+---
+
+## 📌 Notes  
+
+- Ensure both `.env` files (main folder & `src/`) are updated with the same API keys.  
+- If any library fails to install, try running:  
+
+```bash
+npm install --legacy-peer-deps
+```
+
+---
+
+✅ Now you’re ready to run the **AI Interview App**!  
